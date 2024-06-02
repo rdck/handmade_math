@@ -241,6 +241,11 @@ typedef union HMM_Vec2
         float Width, Height;
     };
 
+    struct { float x, y; };
+    struct { float u, v; };
+    struct { float w, h; };
+    struct { float l, r; };
+
     float Elements[2];
 
 #ifdef __cplusplus
@@ -267,6 +272,10 @@ typedef union HMM_Vec3
     {
         float R, G, B;
     };
+
+    struct { float x, y, z; };
+    struct { float u, v, w; };
+    struct { float r, g, b; };
 
     struct
     {
@@ -330,6 +339,9 @@ typedef union HMM_Vec4
 
         float A;
     };
+
+    struct { float x, y, z, w; };
+    struct { float r, g, b, a; };
 
     struct
     {
